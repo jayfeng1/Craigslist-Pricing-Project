@@ -11,5 +11,7 @@ Craigslist-Pricing-Project
 
     scrapy crawl craig -o items.csv -t csv
 
+For more in-depth to customize, here's the blog post:
 
+https://racketracer.wordpress.com/2015/01/29/practical-scraping-using-scrapy/
 
