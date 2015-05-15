@@ -12,7 +12,7 @@ import pandas as pd
 
 zips = "C:/Users/Jay/Dropbox/Coding Projects/craigslist/ZipCodeSeattle.csv"
 zipSeattle = pd.read_csv(zips)
-data = "C:/Users/Jay/Dropbox/Coding Projects/craigslist/craig12-14Formatted.csv"
+data = "C:/Users/Jay/Dropbox/Coding Projects/craigslist/craigSeattle.csv"
 craig = pd.read_csv(data)
 craig['zipcode'] = NaN
 
