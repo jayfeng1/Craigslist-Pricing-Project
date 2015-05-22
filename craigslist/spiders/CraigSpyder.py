@@ -96,9 +96,9 @@ class MySpider(scrapy.Spider):
         except:
             pass
         item["contentLen"] = len(response.xpath("//section[@id='postingbody']").xpath("text()").extract())
-        postinginfo = response.xpath("//p[@class = 'postinginfo']").xpath("time/@datetime")
-        item["postDate"] = postinginfo[0].extract()
-        item["updateDate"] = postinginfo[len(postinginfo)-1].extract()
+        postinginfo = response.xpath("//p[@class = 'postinginfo reveal']").xpath("time/@datetime")
+        item["postDate"] = postinginfo.extract()
+        item["updateDate"] = postinginfo.extract()
         #TODO: check this equal to if it's valid
         if item["updateDate"] != item["postDate"]:
             item["reposts"] = 1
