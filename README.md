@@ -15,5 +15,5 @@ For more in-depth to customize, here's the blog post:
 
 https://racketracer.wordpress.com/2015/01/29/practical-scraping-using-scrapy/
 
-If replace the pipelines.py file with an empty file if you don't want to store the data in a postgresql database. 
+Replace the pipelines.py file with an empty file if you don't want to store the data in a postgresql database. 
 
